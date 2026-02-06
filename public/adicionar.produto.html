@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicione um produto</title>
+
+</head>
+<body>
+    
+    <form action="/adicionar-produto" method="POST">
+        <label for="nome">Nome do produto:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="pesoUnit">Peso Unitário:</label>
+        <input type="number" id="pesoUnit" placeholder="Peso por Unidade" name="pesoUnit" required>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade"  required >
+
+        <label for="qntCaixa">Quantidade por Caixa:</label>
+        <input type="number" id="qntCaixa" name="qntCaixa" >
+
+        <label for="validade">Validade:</label>
+        <input type="date" id="validade" name="validade">
+
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao">
+
+    <button type="submit">Adicionar produto</button>
+
+    </form>
+</body>
+</html>
